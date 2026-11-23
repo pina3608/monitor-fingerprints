@@ -1,0 +1,394 @@
+{
+ "J4_skeleton|honest|Opus": {
+  "cross_vendor": [
+   0.9605757196495619,
+   1598
+  ],
+  "same_vendor": [
+   0.91,
+   400
+  ]
+ },
+ "J4_skeleton|honest|Sonnet": {
+  "cross_vendor": [
+   0.9668335419274092,
+   1598
+  ],
+  "same_vendor": [
+   0.895,
+   400
+  ]
+ },
+ "J4_skeleton|honest|Haiku": {
+  "cross_vendor": [
+   0.9818523153942428,
+   1598
+  ],
+  "same_vendor": [
+   0.9575,
+   400
+  ]
+ },
+ "J4_skeleton|honest|Gemini Pro": {
+  "cross_vendor": [
+   0.9922135706340378,
+   1798
+  ],
+  "same_vendor": [
+   0.985,
+   200
+  ]
+ },
+ "J4_skeleton|honest|Gemini Flash": {
+  "cross_vendor": [
+   0.9705228031145717,
+   1798
+  ],
+  "same_vendor": [
+   0.95,
+   200
+  ]
+ },
+ "J4_skeleton|honest|GLM 5": {
+  "cross_vendor": [
+   0.9029029029029029,
+   1998
+  ]
+ },
+ "J4_skeleton|honest|Kimi": {
+  "cross_vendor": [
+   0.8383838383838383,
+   1980
+  ]
+ },
+ "J4_skeleton|honest|Grok": {
+  "cross_vendor": [
+   0.9894894894894894,
+   1998
+  ]
+ },
+ "J4_skeleton|honest|GPT-5 Nano": {
+  "cross_vendor": [
+   0.9981226533166458,
+   1598
+  ],
+  "same_vendor": [
+   0.98,
+   400
+  ]
+ },
+ "J4_skeleton|honest|GPT-5 Mini": {
+  "cross_vendor": [
+   0.9924906132665833,
+   1598
+  ],
+  "same_vendor": [
+   0.975,
+   400
+  ]
+ },
+ "J4_skeleton|honest|GPT-5.4": {
+  "cross_vendor": [
+   0.9974968710888611,
+   1598
+  ],
+  "same_vendor": [
+   0.9975,
+   400
+  ]
+ },
+ "J4_skeleton|attack|Opus": {
+  "cross_vendor": [
+   0.9429347826086957,
+   736
+  ],
+  "same_vendor": [
+   0.9021739130434783,
+   184
+  ]
+ },
+ "J4_skeleton|attack|Sonnet": {
+  "cross_vendor": [
+   0.9266304347826086,
+   736
+  ],
+  "same_vendor": [
+   0.8315217391304348,
+   184
+  ]
+ },
+ "J4_skeleton|attack|Haiku": {
+  "cross_vendor": [
+   0.9592391304347826,
+   736
+  ],
+  "same_vendor": [
+   0.9402173913043478,
+   184
+  ]
+ },
+ "J4_skeleton|attack|Gemini Pro": {
+  "cross_vendor": [
+   0.9903381642512077,
+   828
+  ],
+  "same_vendor": [
+   0.967391304347826,
+   92
+  ]
+ },
+ "J4_skeleton|attack|Gemini Flash": {
+  "same_vendor": [
+   0.8152173913043478,
+   92
+  ],
+  "cross_vendor": [
+   0.9033816425120773,
+   828
+  ]
+ },
+ "J4_skeleton|attack|GLM 5": {
+  "cross_vendor": [
+   0.9141304347826087,
+   920
+  ]
+ },
+ "J4_skeleton|attack|Kimi": {
+  "cross_vendor": [
+   0.6847826086956522,
+   920
+  ]
+ },
+ "J4_skeleton|attack|Grok": {
+  "cross_vendor": [
+   0.9554347826086956,
+   920
+  ]
+ },
+ "J4_skeleton|attack|GPT-5 Nano": {
+  "cross_vendor": [
+   0.9945652173913043,
+   736
+  ],
+  "same_vendor": [
+   0.967391304347826,
+   184
+  ]
+ },
+ "J4_skeleton|attack|GPT-5 Mini": {
+  "cross_vendor": [
+   0.967391304347826,
+   736
+  ],
+  "same_vendor": [
+   0.9619565217391305,
+   184
+  ]
+ },
+ "J4_skeleton|attack|GPT-5.4": {
+  "cross_vendor": [
+   0.9945652173913043,
+   736
+  ],
+  "same_vendor": [
+   0.9782608695652174,
+   184
+  ]
+ },
+ "J1_calls|honest|Opus": {
+  "cross_vendor": [
+   0.9987484355444305,
+   1598
+  ],
+  "same_vendor": [
+   0.9925,
+   400
+  ]
+ },
+ "J1_calls|honest|Sonnet": {
+  "cross_vendor": [
+   1.0,
+   1598
+  ],
+  "same_vendor": [
+   0.9975,
+   400
+  ]
+ },
+ "J1_calls|honest|Haiku": {
+  "cross_vendor": [
+   0.9987484355444305,
+   1598
+  ],
+  "same_vendor": [
+   1.0,
+   400
+  ]
+ },
+ "J1_calls|honest|Gemini Pro": {
+  "cross_vendor": [
+   0.9994438264738599,
+   1798
+  ],
+  "same_vendor": [
+   0.99,
+   200
+  ]
+ },
+ "J1_calls|honest|Gemini Flash": {
+  "cross_vendor": [
+   1.0,
+   1798
+  ],
+  "same_vendor": [
+   0.99,
+   200
+  ]
+ },
+ "J1_calls|honest|GLM 5": {
+  "cross_vendor": [
+   0.9819819819819819,
+   1998
+  ]
+ },
+ "J1_calls|honest|Kimi": {
+  "cross_vendor": [
+   0.945959595959596,
+   1980
+  ]
+ },
+ "J1_calls|honest|Grok": {
+  "cross_vendor": [
+   0.9984984984984985,
+   1998
+  ]
+ },
+ "J1_calls|honest|GPT-5 Nano": {
+  "cross_vendor": [
+   1.0,
+   1598
+  ],
+  "same_vendor": [
+   0.995,
+   400
+  ]
+ },
+ "J1_calls|honest|GPT-5 Mini": {
+  "cross_vendor": [
+   1.0,
+   1598
+  ],
+  "same_vendor": [
+   1.0,
+   400
+  ]
+ },
+ "J1_calls|honest|GPT-5.4": {
+  "cross_vendor": [
+   1.0,
+   1598
+  ],
+  "same_vendor": [
+   1.0,
+   400
+  ]
+ },
+ "J1_calls|attack|Opus": {
+  "cross_vendor": [
+   0.9877717391304348,
+   736
+  ],
+  "same_vendor": [
+   0.9945652173913043,
+   184
+  ]
+ },
+ "J1_calls|attack|Sonnet": {
+  "cross_vendor": [
+   1.0,
+   736
+  ],
+  "same_vendor": [
+   0.9782608695652174,
+   184
+  ]
+ },
+ "J1_calls|attack|Haiku": {
+  "cross_vendor": [
+   0.9782608695652174,
+   736
+  ],
+  "same_vendor": [
+   0.9836956521739131,
+   184
+  ]
+ },
+ "J1_calls|attack|Gemini Pro": {
+  "cross_vendor": [
+   1.0,
+   828
+  ],
+  "same_vendor": [
+   0.9891304347826086,
+   92
+  ]
+ },
+ "J1_calls|attack|Gemini Flash": {
+  "same_vendor": [
+   0.9891304347826086,
+   92
+  ],
+  "cross_vendor": [
+   1.0,
+   828
+  ]
+ },
+ "J1_calls|attack|GLM 5": {
+  "cross_vendor": [
+   0.9467391304347826,
+   920
+  ]
+ },
+ "J1_calls|attack|Kimi": {
+  "cross_vendor": [
+   0.9239130434782609,
+   920
+  ]
+ },
+ "J1_calls|attack|Grok": {
+  "cross_vendor": [
+   0.9989130434782608,
+   920
+  ]
+ },
+ "J1_calls|attack|GPT-5 Nano": {
+  "cross_vendor": [
+   0.998641304347826,
+   736
+  ],
+  "same_vendor": [
+   0.9891304347826086,
+   184
+  ]
+ },
+ "J1_calls|attack|GPT-5 Mini": {
+  "cross_vendor": [
+   0.9932065217391305,
+   736
+  ],
+  "same_vendor": [
+   0.9184782608695652,
+   184
+  ]
+ },
+ "J1_calls|attack|GPT-5.4": {
+  "cross_vendor": [
+   1.0,
+   736
+  ],
+  "same_vendor": [
+   1.0,
+   184
+  ]
+ }
+}

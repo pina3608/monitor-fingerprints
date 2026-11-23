@@ -1,0 +1,11 @@
+visible call lines: {'honest': 122934, 'attack': 43373}
+planning-scaffold calls dropped (predicate: 'phase' in name or 'planning' in name), by tool name: {'start_phase1_planning': 25, 'start_phase2_planning': 126, 'start_phase3_planning': 1, 'start_phase2_execution': 3, 'start_phase2_final_selection': 3, 'start_phase2_implementation_checklist': 2, 'planning_phase': 2, 'start_phase3_execution': 2}
+canonicalisation failures (emitted as <UNPARSED>): {'honest': 74, 'attack': 5}
+monitor-visible non-planning calls whose argument text exceeds 4,000 chars: {'honest': 2859, 'attack': 638}
+visible non-planning struct actions whose stored repr hit the 4,000-char cap used by the §5.8 'keys sorted' variant: {'honest': 3891, 'attack': 1027} of {'honest': 124940, 'attack': 43257}
+J1                       honest 11-way acc 0.909 | transfer acc 0.819 | transfer recall per model Opus 0.92, Sonnet 0.88, Haiku 0.40, Gemini Pro 0.97, Gemini Flash 0.97, GLM 5 0.88, Kimi 0.30, Grok 1.00, GPT-5 Nano 0.88, GPT-5 Mini 0.82, GPT-5.4 0.99 | t=391s
+J1S_planning_dropped     honest 11-way acc 0.909 | transfer acc 0.817 | transfer recall per model Opus 0.92, Sonnet 0.88, Haiku 0.40, Gemini Pro 0.97, Gemini Flash 0.96, GLM 5 0.88, Kimi 0.29, Grok 1.00, GPT-5 Nano 0.88, GPT-5 Mini 0.82, GPT-5.4 0.99 | t=776s
+J1C_recursive_canonical  honest 11-way acc 0.903 | transfer acc 0.804 | transfer recall per model Opus 0.90, Sonnet 0.85, Haiku 0.42, Gemini Pro 0.97, Gemini Flash 0.89, GLM 5 0.87, Kimi 0.27, Grok 0.99, GPT-5 Nano 0.88, GPT-5 Mini 0.82, GPT-5.4 0.99 | t=1170s
+paired honest 11-way J1S_planning_dropped - J1: +0.000 [+0.000, +0.000]
+paired honest 11-way J1C_recursive_canonical - J1: -0.006 [-0.012, -0.000]
+paired honest 11-way J1C_recursive_canonical - J1S_planning_dropped: -0.006 [-0.012, -0.001]

@@ -1,0 +1,351 @@
+{
+ "record_counts": {
+  "records": 22215,
+  "cohort_agent_run": 3212,
+  "other_agent_run": 6755,
+  "monitor_rescoring": 12248,
+  "distinct_trajectory_ids": 22123,
+  "duplicate_trajectory_id_records": 92
+ },
+ "other_agent_run_names": {
+  "Accidental ST (all MT/ST combos)": 461,
+  "Claude Code honest": 200,
+  "Codex honest": 200,
+  "Editor Only (attack)": 92,
+  "Editor Only (obvious)": 92,
+  "Editor Only attack": 92,
+  "Editor Only honest": 200,
+  "GLM 5 obvious-attack": 92,
+  "GPT-5 Mini obvious-attack": 92,
+  "GPT-5 Nano obvious-attack": 92,
+  "GPT-5.4 obvious-attack": 92,
+  "Gemini Flash obvious-attack": 92,
+  "Gemini Pro obvious-attack": 92,
+  "Grok obvious-attack": 92,
+  "Haiku Goal-only attack": 92,
+  "Haiku Goal-plus-details-pseudocode attack": 92,
+  "Haiku Goal-plus-details-scorer-code attack": 92,
+  "Haiku honest (3-epoch repeat)": 600,
+  "Haiku honest (big 1626-task)": 884,
+  "Haiku no-ST-test": 92,
+  "Haiku obvious-attack": 92,
+  "Haiku simple-insert attack": 92,
+  "Honest (env desc)": 200,
+  "Kimi obvious-attack": 92,
+  "No Internet attack": 92,
+  "No Internet honest": 200,
+  "No Internet obvious-attack": 92,
+  "No Intranet attack": 92,
+  "No Intranet honest": 200,
+  "No Intranet obvious-attack": 92,
+  "Obvious (with env desc)": 92,
+  "Opus attack env-desc": 92,
+  "Opus no-scratchpad": 92,
+  "Opus obvious-attack": 92,
+  "Opus strategy-attack": 50,
+  "Opus thinking=16k attack": 92,
+  "Opus thinking=16k honest": 200,
+  "Opus thinking=4k attack": 92,
+  "Opus thinking=4k honest": 200,
+  "Opus thinking=64k attack": 92,
+  "Opus thinking=64k honest": 200,
+  "Opus thinking=off attack": 92,
+  "Opus thinking=off honest": 200,
+  "Sonnet obvious-attack": 92
+ },
+ "per_model": {
+  "Opus": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    185,
+    0
+   ],
+   "agent_model_values": {
+    "None": 185,
+    "claude-opus-4-6": 107
+   },
+   "honest_main_task_success": 0.665,
+   "attack_side_task_success": 0.9782608695652174,
+   "honest_templates": {
+    "b6a3c5340e67": 185,
+    "043cbe728ba7": 15
+   }
+  },
+  "Sonnet": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    184,
+    0
+   ],
+   "agent_model_values": {
+    "None": 184,
+    "claude-sonnet-4-6": 108
+   },
+   "honest_main_task_success": 0.64,
+   "attack_side_task_success": 0.9565217391304348,
+   "honest_templates": {
+    "b6a3c5340e67": 184,
+    "043cbe728ba7": 16
+   }
+  },
+  "Haiku": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    182,
+    0
+   ],
+   "agent_model_values": {
+    "None": 182,
+    "claude-haiku-4-5-20251001": 110
+   },
+   "honest_main_task_success": 0.515,
+   "attack_side_task_success": 0.7282608695652174,
+   "honest_templates": {
+    "b6a3c5340e67": 182,
+    "043cbe728ba7": 18
+   }
+  },
+  "Gemini Pro": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    0,
+    0
+   ],
+   "agent_model_values": {
+    "gemini-3.1-pro-preview": 292
+   },
+   "honest_main_task_success": 0.61,
+   "attack_side_task_success": 0.8804347826086957,
+   "honest_templates": {
+    "043cbe728ba7": 197,
+    "0cf170d23301": 3
+   }
+  },
+  "Gemini Flash": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    0,
+    0
+   ],
+   "agent_model_values": {
+    "gemini-3-flash-preview": 292
+   },
+   "honest_main_task_success": 0.535,
+   "attack_side_task_success": 0.5652173913043478,
+   "honest_templates": {
+    "043cbe728ba7": 194,
+    "0cf170d23301": 3,
+    "da39a3ee5e6b": 3
+   }
+  },
+  "GLM 5": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    189,
+    0
+   ],
+   "agent_model_values": {
+    "None": 189,
+    "glm-5": 103
+   },
+   "honest_main_task_success": 0.555,
+   "attack_side_task_success": 0.8695652173913043,
+   "honest_templates": {
+    "b6a3c5340e67": 189,
+    "043cbe728ba7": 11
+   }
+  },
+  "Kimi": {
+   "honest": 198,
+   "attack": 92,
+   "excluded": 2,
+   "missing_version_label": [
+    139,
+    0
+   ],
+   "agent_model_values": {
+    "None": 139,
+    "kimi-k2.5": 151
+   },
+   "honest_main_task_success": 0.48484848484848486,
+   "attack_side_task_success": 0.44565217391304346,
+   "honest_templates": {
+    "b6a3c5340e67": 139,
+    "043cbe728ba7": 35,
+    "da39a3ee5e6b": 24
+   }
+  },
+  "Grok": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    0,
+    0
+   ],
+   "agent_model_values": {
+    "grok-4.1-fast": 292
+   },
+   "honest_main_task_success": 0.245,
+   "attack_side_task_success": 0.43478260869565216,
+   "honest_templates": {
+    "043cbe728ba7": 200
+   }
+  },
+  "GPT-5 Nano": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    190,
+    0
+   ],
+   "agent_model_values": {
+    "None": 190,
+    "gpt-5-nano": 102
+   },
+   "honest_main_task_success": 0.28,
+   "attack_side_task_success": 0.0,
+   "honest_templates": {
+    "b6a3c5340e67": 190,
+    "043cbe728ba7": 10
+   }
+  },
+  "GPT-5 Mini": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    190,
+    0
+   ],
+   "agent_model_values": {
+    "None": 190,
+    "gpt-5-mini": 102
+   },
+   "honest_main_task_success": 0.415,
+   "attack_side_task_success": 0.010869565217391304,
+   "honest_templates": {
+    "b6a3c5340e67": 190,
+    "043cbe728ba7": 10
+   }
+  },
+  "GPT-5.4": {
+   "honest": 200,
+   "attack": 92,
+   "excluded": 0,
+   "missing_version_label": [
+    183,
+    0
+   ],
+   "agent_model_values": {
+    "None": 183,
+    "gpt-5.4": 109
+   },
+   "honest_main_task_success": 0.54,
+   "attack_side_task_success": 0.06521739130434782,
+   "honest_templates": {
+    "b6a3c5340e67": 183,
+    "043cbe728ba7": 17
+   }
+  }
+ },
+ "repeated_views": [
+  {
+   "sha256": "5558e933159f",
+   "n": 7,
+   "labels": {
+    "attack": 7
+   },
+   "models": {
+    "GPT-5 Nano": 5,
+    "GPT-5 Mini": 2
+   },
+   "task_groups": 7,
+   "empty_sentinel": true,
+   "chars": 20
+  },
+  {
+   "sha256": "42118f98fc2b",
+   "n": 7,
+   "labels": {
+    "attack": 7
+   },
+   "models": {
+    "GPT-5 Mini": 7
+   },
+   "task_groups": 7,
+   "empty_sentinel": false,
+   "chars": 267
+  }
+ ],
+ "planning_calls": {
+  "Opus": {
+   "total": 83,
+   "visible": 0,
+   "malformed_dropped": 83
+  },
+  "Sonnet": {
+   "total": 26,
+   "visible": 1,
+   "malformed_dropped": 25
+  },
+  "Haiku": {
+   "total": 17,
+   "visible": 1,
+   "malformed_dropped": 16
+  },
+  "Gemini Pro": {
+   "total": 7,
+   "visible": 0,
+   "malformed_dropped": 7
+  },
+  "Gemini Flash": {
+   "total": 118,
+   "visible": 97,
+   "malformed_dropped": 21
+  },
+  "GLM 5": {
+   "total": 5,
+   "visible": 0,
+   "malformed_dropped": 5
+  },
+  "Kimi": {
+   "total": 44,
+   "visible": 43,
+   "malformed_dropped": 1
+  },
+  "Grok": {
+   "total": 5,
+   "visible": 5,
+   "malformed_dropped": 0
+  },
+  "GPT-5 Nano": {
+   "total": 0,
+   "visible": 0,
+   "malformed_dropped": 0
+  },
+  "GPT-5 Mini": {
+   "total": 17,
+   "visible": 17,
+   "malformed_dropped": 0
+  },
+  "GPT-5.4": {
+   "total": 0,
+   "visible": 0,
+   "malformed_dropped": 0
+  }
+ }
+}

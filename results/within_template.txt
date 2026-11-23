@@ -1,0 +1,20 @@
+
+## bare-task template (b6a3c5340e67); honest runs with this template per model: {'GLM 5': 189, 'GPT-5 Mini': 190, 'GPT-5 Nano': 190, 'GPT-5.4': 183, 'Haiku': 182, 'Kimi': 139, 'Opus': 185, 'Sonnet': 184}; models with >=100: ['GLM 5', 'GPT-5 Mini', 'GPT-5 Nano', 'GPT-5.4', 'Haiku', 'Kimi', 'Opus', 'Sonnet']; chance=0.125
+  [all runs] n=1442
+  H2_wrapper_only    acc=0.797 (6.4x chance) recall={'GLM 5': 0.79, 'GPT-5 Mini': 0.92, 'GPT-5 Nano': 0.93, 'GPT-5.4': 0.97, 'Haiku': 0.87, 'Kimi': 0.43, 'Opus': 0.62, 'Sonnet': 0.76}
+  H3_norm_verbs      acc=0.775 (6.2x chance) recall={'GLM 5': 0.59, 'GPT-5 Mini': 0.88, 'GPT-5 Nano': 0.95, 'GPT-5.4': 0.97, 'Haiku': 0.78, 'Kimi': 0.35, 'Opus': 0.8, 'Sonnet': 0.78}
+  H3b_bag_of_verbs   acc=0.676 (5.4x chance) recall={'GLM 5': 0.43, 'GPT-5 Mini': 0.86, 'GPT-5 Nano': 0.93, 'GPT-5.4': 0.9, 'Haiku': 0.61, 'Kimi': 0.28, 'Opus': 0.62, 'Sonnet': 0.68}
+  [common-task intersection (131 tasks)] n=1048
+  H2_wrapper_only    acc=0.769 (6.2x chance) recall={'GLM 5': 0.77, 'GPT-5 Mini': 0.89, 'GPT-5 Nano': 0.88, 'GPT-5.4': 0.97, 'Haiku': 0.84, 'Kimi': 0.5, 'Opus': 0.6, 'Sonnet': 0.7}
+  H3_norm_verbs      acc=0.749 (6.0x chance) recall={'GLM 5': 0.5, 'GPT-5 Mini': 0.86, 'GPT-5 Nano': 0.92, 'GPT-5.4': 0.98, 'Haiku': 0.8, 'Kimi': 0.41, 'Opus': 0.73, 'Sonnet': 0.79}
+  H3b_bag_of_verbs   acc=0.638 (5.1x chance) recall={'GLM 5': 0.31, 'GPT-5 Mini': 0.87, 'GPT-5 Nano': 0.9, 'GPT-5.4': 0.9, 'Haiku': 0.56, 'Kimi': 0.37, 'Opus': 0.6, 'Sonnet': 0.59}
+
+## full scaffold template (043cbe728ba7); honest runs with this template per model: {'GLM 5': 11, 'GPT-5 Mini': 10, 'GPT-5 Nano': 10, 'GPT-5.4': 17, 'Gemini Flash': 194, 'Gemini Pro': 197, 'Grok': 200, 'Haiku': 18, 'Kimi': 35, 'Opus': 15, 'Sonnet': 16}; models with >=100: ['Gemini Flash', 'Gemini Pro', 'Grok']; chance=0.333
+  [all runs] n=591
+  H2_wrapper_only    acc=0.944 (2.8x chance) recall={'Gemini Flash': 0.93, 'Gemini Pro': 0.9, 'Grok': 1.0}
+  H3_norm_verbs      acc=0.915 (2.7x chance) recall={'Gemini Flash': 0.85, 'Gemini Pro': 0.96, 'Grok': 0.94}
+  H3b_bag_of_verbs   acc=0.851 (2.6x chance) recall={'Gemini Flash': 0.8, 'Gemini Pro': 0.88, 'Grok': 0.86}
+  [common-task intersection (191 tasks)] n=573
+  H2_wrapper_only    acc=0.946 (2.8x chance) recall={'Gemini Flash': 0.93, 'Gemini Pro': 0.91, 'Grok': 1.0}
+  H3_norm_verbs      acc=0.913 (2.7x chance) recall={'Gemini Flash': 0.84, 'Gemini Pro': 0.96, 'Grok': 0.94}
+  H3b_bag_of_verbs   acc=0.857 (2.6x chance) recall={'Gemini Flash': 0.82, 'Gemini Pro': 0.89, 'Grok': 0.86}

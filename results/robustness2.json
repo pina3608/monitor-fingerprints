@@ -1,0 +1,930 @@
+{
+ "J1_calls": {
+  "acc": 0.9094631483166515,
+  "macro_balanced_acc": 0.9090817263544536,
+  "macro_balanced_acc_ci95": [
+   0.8986035653473982,
+   0.9195375344352619
+  ],
+  "per_model": {
+   "Opus": {
+    "n": 200,
+    "predicted": 204,
+    "recall": 0.91,
+    "precision": 0.8921568627450981,
+    "balanced_acc_ovr": 0.9494944944944945
+   },
+   "Sonnet": {
+    "n": 200,
+    "predicted": 210,
+    "recall": 0.965,
+    "precision": 0.919047619047619,
+    "balanced_acc_ovr": 0.9782457457457457
+   },
+   "Haiku": {
+    "n": 200,
+    "predicted": 236,
+    "recall": 0.965,
+    "precision": 0.8177966101694916,
+    "balanced_acc_ovr": 0.9717392392392392
+   },
+   "Gemini Pro": {
+    "n": 200,
+    "predicted": 205,
+    "recall": 0.97,
+    "precision": 0.9463414634146341,
+    "balanced_acc_ovr": 0.9822472472472472
+   },
+   "Gemini Flash": {
+    "n": 200,
+    "predicted": 202,
+    "recall": 0.97,
+    "precision": 0.9603960396039604,
+    "balanced_acc_ovr": 0.9829979979979979
+   },
+   "GLM 5": {
+    "n": 200,
+    "predicted": 207,
+    "recall": 0.775,
+    "precision": 0.748792270531401,
+    "balanced_acc_ovr": 0.874486986986987
+   },
+   "Kimi": {
+    "n": 198,
+    "predicted": 122,
+    "recall": 0.4898989898989899,
+    "precision": 0.7950819672131147,
+    "balanced_acc_ovr": 0.7386994949494949
+   },
+   "Grok": {
+    "n": 200,
+    "predicted": 210,
+    "recall": 0.99,
+    "precision": 0.9428571428571428,
+    "balanced_acc_ovr": 0.9919969969969971
+   },
+   "GPT-5 Nano": {
+    "n": 200,
+    "predicted": 206,
+    "recall": 0.995,
+    "precision": 0.9660194174757282,
+    "balanced_acc_ovr": 0.9957482482482483
+   },
+   "GPT-5 Mini": {
+    "n": 200,
+    "predicted": 196,
+    "recall": 0.97,
+    "precision": 0.9897959183673469,
+    "balanced_acc_ovr": 0.9844994994994996
+   },
+   "GPT-5.4": {
+    "n": 200,
+    "predicted": 200,
+    "recall": 1.0,
+    "precision": 1.0,
+    "balanced_acc_ovr": 1.0
+   }
+  },
+  "errors": 199,
+  "errors_within_vendor": 33,
+  "loeo": {
+   "per_env": [
+    {
+     "env": "auto_workflow",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.9136363636363637
+    },
+    {
+     "env": "clinical_trial",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.771689497716895
+    },
+    {
+     "env": "file_indexing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8590909090909091
+    },
+    {
+     "env": "media_processing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8772727272727273
+    },
+    {
+     "env": "model_registry",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8409090909090909
+    },
+    {
+     "env": "shared_dotfiles",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7945205479452054
+    },
+    {
+     "env": "slack_clone",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8590909090909091
+    },
+    {
+     "env": "tiktok",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8545454545454545
+    },
+    {
+     "env": "user_tracking",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8454545454545455
+    },
+    {
+     "env": "web_scraping",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8772727272727273
+    }
+   ],
+   "pooled_acc": 0.8494085532302093,
+   "pooled_macro_balanced_acc": 0.8490495867768595
+  },
+  "within_vendor": {
+   "anthropic": {
+    "models": [
+     "Haiku",
+     "Opus",
+     "Sonnet"
+    ],
+    "n": 600,
+    "acc": 0.9583333333333334,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.9583333333333334,
+    "templates": {
+     "b6a3c5340e67": 551,
+     "043cbe728ba7": 49
+    }
+   },
+   "google": {
+    "models": [
+     "Gemini Flash",
+     "Gemini Pro"
+    ],
+    "n": 400,
+    "acc": 0.97,
+    "chance": 0.5,
+    "macro_balanced_acc": 0.97,
+    "templates": {
+     "043cbe728ba7": 391,
+     "0cf170d23301": 6,
+     "da39a3ee5e6b": 3
+    }
+   },
+   "openai": {
+    "models": [
+     "GPT-5 Mini",
+     "GPT-5 Nano",
+     "GPT-5.4"
+    ],
+    "n": 600,
+    "acc": 0.9783333333333334,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.9783333333333334,
+    "templates": {
+     "b6a3c5340e67": 563,
+     "043cbe728ba7": 37
+    }
+   }
+  }
+ },
+ "J4_skeleton": {
+  "acc": 0.767515923566879,
+  "macro_balanced_acc": 0.7671717171717173,
+  "macro_balanced_acc_ci95": [
+   0.7500697392708815,
+   0.7840148071625344
+  ],
+  "per_model": {
+   "Opus": {
+    "n": 200,
+    "predicted": 206,
+    "recall": 0.65,
+    "precision": 0.6310679611650486,
+    "balanced_acc_ovr": 0.805980980980981
+   },
+   "Sonnet": {
+    "n": 200,
+    "predicted": 209,
+    "recall": 0.77,
+    "precision": 0.7368421052631579,
+    "balanced_acc_ovr": 0.8712362362362363
+   },
+   "Haiku": {
+    "n": 200,
+    "predicted": 215,
+    "recall": 0.78,
+    "precision": 0.7255813953488373,
+    "balanced_acc_ovr": 0.8752352352352353
+   },
+   "Gemini Pro": {
+    "n": 200,
+    "predicted": 216,
+    "recall": 0.935,
+    "precision": 0.8657407407407407,
+    "balanced_acc_ovr": 0.9602427427427428
+   },
+   "Gemini Flash": {
+    "n": 200,
+    "predicted": 197,
+    "recall": 0.79,
+    "precision": 0.8020304568527918,
+    "balanced_acc_ovr": 0.8852402402402403
+   },
+   "GLM 5": {
+    "n": 200,
+    "predicted": 177,
+    "recall": 0.5,
+    "precision": 0.5649717514124294,
+    "balanced_acc_ovr": 0.7307307307307307
+   },
+   "Kimi": {
+    "n": 198,
+    "predicted": 163,
+    "recall": 0.3888888888888889,
+    "precision": 0.4723926380368098,
+    "balanced_acc_ovr": 0.6729444444444445
+   },
+   "Grok": {
+    "n": 200,
+    "predicted": 205,
+    "recall": 0.88,
+    "precision": 0.8585365853658536,
+    "balanced_acc_ovr": 0.9327427427427428
+   },
+   "GPT-5 Nano": {
+    "n": 200,
+    "predicted": 197,
+    "recall": 0.92,
+    "precision": 0.934010152284264,
+    "balanced_acc_ovr": 0.9567467467467468
+   },
+   "GPT-5 Mini": {
+    "n": 200,
+    "predicted": 203,
+    "recall": 0.855,
+    "precision": 0.8423645320197044,
+    "balanced_acc_ovr": 0.9194919919919919
+   },
+   "GPT-5.4": {
+    "n": 200,
+    "predicted": 210,
+    "recall": 0.97,
+    "precision": 0.9238095238095239,
+    "balanced_acc_ovr": 0.980995995995996
+   }
+  },
+  "errors": 511,
+  "errors_within_vendor": 120,
+  "loeo": {
+   "per_env": [
+    {
+     "env": "auto_workflow",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7454545454545455
+    },
+    {
+     "env": "clinical_trial",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7671232876712328
+    },
+    {
+     "env": "file_indexing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7545454545454545
+    },
+    {
+     "env": "media_processing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.6818181818181818
+    },
+    {
+     "env": "model_registry",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7545454545454545
+    },
+    {
+     "env": "shared_dotfiles",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.5981735159817352
+    },
+    {
+     "env": "slack_clone",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7636363636363637
+    },
+    {
+     "env": "tiktok",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7545454545454545
+    },
+    {
+     "env": "user_tracking",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.6545454545454545
+    },
+    {
+     "env": "web_scraping",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7818181818181819
+    }
+   ],
+   "pooled_acc": 0.7256596906278435,
+   "pooled_macro_balanced_acc": 0.7253168044077135
+  },
+  "within_vendor": {
+   "anthropic": {
+    "models": [
+     "Haiku",
+     "Opus",
+     "Sonnet"
+    ],
+    "n": 600,
+    "acc": 0.8533333333333334,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.8533333333333334,
+    "templates": {
+     "b6a3c5340e67": 551,
+     "043cbe728ba7": 49
+    }
+   },
+   "google": {
+    "models": [
+     "Gemini Flash",
+     "Gemini Pro"
+    ],
+    "n": 400,
+    "acc": 0.92,
+    "chance": 0.5,
+    "macro_balanced_acc": 0.92,
+    "templates": {
+     "043cbe728ba7": 391,
+     "0cf170d23301": 6,
+     "da39a3ee5e6b": 3
+    }
+   },
+   "openai": {
+    "models": [
+     "GPT-5 Mini",
+     "GPT-5 Nano",
+     "GPT-5.4"
+    ],
+    "n": 600,
+    "acc": 0.9516666666666667,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.9516666666666667,
+    "templates": {
+     "b6a3c5340e67": 563,
+     "043cbe728ba7": 37
+    }
+   }
+  }
+ },
+ "H2_formatting_only": {
+  "acc": 0.8193812556869882,
+  "macro_balanced_acc": 0.8191000918273645,
+  "macro_balanced_acc_ci95": [
+   0.8038661982037554,
+   0.8347704065197783
+  ],
+  "per_model": {
+   "Opus": {
+    "n": 200,
+    "predicted": 188,
+    "recall": 0.56,
+    "precision": 0.5957446808510638,
+    "balanced_acc_ovr": 0.760980980980981
+   },
+   "Sonnet": {
+    "n": 200,
+    "predicted": 223,
+    "recall": 0.735,
+    "precision": 0.6591928251121076,
+    "balanced_acc_ovr": 0.848480980980981
+   },
+   "Haiku": {
+    "n": 200,
+    "predicted": 221,
+    "recall": 0.84,
+    "precision": 0.7601809954751131,
+    "balanced_acc_ovr": 0.9067367367367367
+   },
+   "Gemini Pro": {
+    "n": 200,
+    "predicted": 202,
+    "recall": 0.895,
+    "precision": 0.8861386138613861,
+    "balanced_acc_ovr": 0.9417442442442443
+   },
+   "Gemini Flash": {
+    "n": 200,
+    "predicted": 206,
+    "recall": 0.915,
+    "precision": 0.8883495145631068,
+    "balanced_acc_ovr": 0.9517442442442443
+   },
+   "GLM 5": {
+    "n": 200,
+    "predicted": 181,
+    "recall": 0.77,
+    "precision": 0.850828729281768,
+    "balanced_acc_ovr": 0.8782432432432432
+   },
+   "Kimi": {
+    "n": 198,
+    "predicted": 168,
+    "recall": 0.51010101010101,
+    "precision": 0.6011904761904762,
+    "balanced_acc_ovr": 0.738300505050505
+   },
+   "Grok": {
+    "n": 200,
+    "predicted": 208,
+    "recall": 0.965,
+    "precision": 0.9278846153846154,
+    "balanced_acc_ovr": 0.9787462462462462
+   },
+   "GPT-5 Nano": {
+    "n": 200,
+    "predicted": 201,
+    "recall": 0.93,
+    "precision": 0.9253731343283582,
+    "balanced_acc_ovr": 0.9612462462462463
+   },
+   "GPT-5 Mini": {
+    "n": 200,
+    "predicted": 198,
+    "recall": 0.925,
+    "precision": 0.9343434343434344,
+    "balanced_acc_ovr": 0.9592467467467467
+   },
+   "GPT-5.4": {
+    "n": 200,
+    "predicted": 202,
+    "recall": 0.965,
+    "precision": 0.9554455445544554,
+    "balanced_acc_ovr": 0.9802477477477478
+   }
+  },
+  "errors": 397,
+  "errors_within_vendor": 168,
+  "loeo": {
+   "per_env": [
+    {
+     "env": "auto_workflow",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8318181818181818
+    },
+    {
+     "env": "clinical_trial",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7990867579908676
+    },
+    {
+     "env": "file_indexing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8590909090909091
+    },
+    {
+     "env": "media_processing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.6818181818181818
+    },
+    {
+     "env": "model_registry",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7727272727272727
+    },
+    {
+     "env": "shared_dotfiles",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7534246575342466
+    },
+    {
+     "env": "slack_clone",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8090909090909091
+    },
+    {
+     "env": "tiktok",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8454545454545455
+    },
+    {
+     "env": "user_tracking",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7227272727272728
+    },
+    {
+     "env": "web_scraping",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.8136363636363636
+    }
+   ],
+   "pooled_acc": 0.7888989990900819,
+   "pooled_macro_balanced_acc": 0.78866391184573
+  },
+  "within_vendor": {
+   "anthropic": {
+    "models": [
+     "Haiku",
+     "Opus",
+     "Sonnet"
+    ],
+    "n": 600,
+    "acc": 0.7966666666666666,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.7966666666666667,
+    "templates": {
+     "b6a3c5340e67": 551,
+     "043cbe728ba7": 49
+    }
+   },
+   "google": {
+    "models": [
+     "Gemini Flash",
+     "Gemini Pro"
+    ],
+    "n": 400,
+    "acc": 0.9125,
+    "chance": 0.5,
+    "macro_balanced_acc": 0.9125000000000001,
+    "templates": {
+     "043cbe728ba7": 391,
+     "0cf170d23301": 6,
+     "da39a3ee5e6b": 3
+    }
+   },
+   "openai": {
+    "models": [
+     "GPT-5 Mini",
+     "GPT-5 Nano",
+     "GPT-5.4"
+    ],
+    "n": 600,
+    "acc": 0.95,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.9500000000000001,
+    "templates": {
+     "b6a3c5340e67": 563,
+     "043cbe728ba7": 37
+    }
+   }
+  }
+ },
+ "H3_norm_verbs": {
+  "acc": 0.7911737943585078,
+  "macro_balanced_acc": 0.7908448117539026,
+  "macro_balanced_acc_ci95": [
+   0.7756373008434864,
+   0.8064306703397612
+  ],
+  "per_model": {
+   "Opus": {
+    "n": 200,
+    "predicted": 222,
+    "recall": 0.8,
+    "precision": 0.7207207207207207,
+    "balanced_acc_ovr": 0.8844844844844846
+   },
+   "Sonnet": {
+    "n": 200,
+    "predicted": 185,
+    "recall": 0.725,
+    "precision": 0.7837837837837838,
+    "balanced_acc_ovr": 0.85248998998999
+   },
+   "Haiku": {
+    "n": 200,
+    "predicted": 212,
+    "recall": 0.825,
+    "precision": 0.7783018867924528,
+    "balanced_acc_ovr": 0.9007382382382383
+   },
+   "Gemini Pro": {
+    "n": 200,
+    "predicted": 218,
+    "recall": 0.915,
+    "precision": 0.8394495412844036,
+    "balanced_acc_ovr": 0.9487412412412413
+   },
+   "Gemini Flash": {
+    "n": 200,
+    "predicted": 194,
+    "recall": 0.775,
+    "precision": 0.7989690721649485,
+    "balanced_acc_ovr": 0.8777402402402403
+   },
+   "GLM 5": {
+    "n": 200,
+    "predicted": 190,
+    "recall": 0.56,
+    "precision": 0.5894736842105263,
+    "balanced_acc_ovr": 0.7604804804804806
+   },
+   "Kimi": {
+    "n": 198,
+    "predicted": 163,
+    "recall": 0.4292929292929293,
+    "precision": 0.5214723926380368,
+    "balanced_acc_ovr": 0.6951464646464647
+   },
+   "Grok": {
+    "n": 200,
+    "predicted": 204,
+    "recall": 0.885,
+    "precision": 0.8676470588235294,
+    "balanced_acc_ovr": 0.9357432432432433
+   },
+   "GPT-5 Nano": {
+    "n": 200,
+    "predicted": 205,
+    "recall": 0.94,
+    "precision": 0.9170731707317074,
+    "balanced_acc_ovr": 0.9657457457457457
+   },
+   "GPT-5 Mini": {
+    "n": 200,
+    "predicted": 201,
+    "recall": 0.875,
+    "precision": 0.8706467661691543,
+    "balanced_acc_ovr": 0.9309934934934935
+   },
+   "GPT-5.4": {
+    "n": 200,
+    "predicted": 204,
+    "recall": 0.97,
+    "precision": 0.9509803921568627,
+    "balanced_acc_ovr": 0.9824974974974975
+   }
+  },
+  "errors": 459,
+  "errors_within_vendor": 110,
+  "loeo": {
+   "per_env": [
+    {
+     "env": "auto_workflow",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.75
+    },
+    {
+     "env": "clinical_trial",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7579908675799086
+    },
+    {
+     "env": "file_indexing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.759090909090909
+    },
+    {
+     "env": "media_processing",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7181818181818181
+    },
+    {
+     "env": "model_registry",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7681818181818182
+    },
+    {
+     "env": "shared_dotfiles",
+     "n": 219,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.091324200913242,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.6438356164383562
+    },
+    {
+     "env": "slack_clone",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7818181818181819
+    },
+    {
+     "env": "tiktok",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7727272727272727
+    },
+    {
+     "env": "user_tracking",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.6954545454545454
+    },
+    {
+     "env": "web_scraping",
+     "n": 220,
+     "tasks": 20,
+     "models_covered": 11,
+     "majority_baseline": 0.09090909090909091,
+     "uniform_chance": 0.09090909090909091,
+     "acc": 0.7545454545454545
+    }
+   ],
+   "pooled_acc": 0.7402183803457689,
+   "pooled_macro_balanced_acc": 0.7399494949494948
+  },
+  "within_vendor": {
+   "anthropic": {
+    "models": [
+     "Haiku",
+     "Opus",
+     "Sonnet"
+    ],
+    "n": 600,
+    "acc": 0.8616666666666667,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.8616666666666667,
+    "templates": {
+     "b6a3c5340e67": 551,
+     "043cbe728ba7": 49
+    }
+   },
+   "google": {
+    "models": [
+     "Gemini Flash",
+     "Gemini Pro"
+    ],
+    "n": 400,
+    "acc": 0.925,
+    "chance": 0.5,
+    "macro_balanced_acc": 0.925,
+    "templates": {
+     "043cbe728ba7": 391,
+     "0cf170d23301": 6,
+     "da39a3ee5e6b": 3
+    }
+   },
+   "openai": {
+    "models": [
+     "GPT-5 Mini",
+     "GPT-5 Nano",
+     "GPT-5.4"
+    ],
+    "n": 600,
+    "acc": 0.95,
+    "chance": 0.3333333333333333,
+    "macro_balanced_acc": 0.9500000000000001,
+    "templates": {
+     "b6a3c5340e67": 563,
+     "043cbe728ba7": 37
+    }
+   }
+  }
+ }
+}

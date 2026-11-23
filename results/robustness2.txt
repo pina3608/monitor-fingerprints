@@ -1,0 +1,32 @@
+
+## J1_calls: acc 0.909; macro balanced acc 0.909 [0.899,0.920]; errors 199 of which within-vendor 33 (17%)
+  per model (n / predicted / recall / precision / one-vs-rest balanced acc): Opus 200/204/0.91/0.89/0.949; Sonnet 200/210/0.96/0.92/0.978; Haiku 200/236/0.96/0.82/0.972; Gemini Pro 200/205/0.97/0.95/0.982; Gemini Flash 200/202/0.97/0.96/0.983; GLM 5 200/207/0.78/0.75/0.874; Kimi 198/122/0.49/0.80/0.739; Grok 200/210/0.99/0.94/0.992; GPT-5 Nano 200/206/0.99/0.97/0.996; GPT-5 Mini 200/196/0.97/0.99/0.984; GPT-5.4 200/200/1.00/1.00/1.000
+  leave-one-environment-out pooled acc 0.849, pooled macro balanced 0.849
+  per env (n trajectories / tasks / models / majority baseline / acc): auto_workflow 220/20/11/0.09/0.914; clinical_trial 219/20/11/0.09/0.772; file_indexing 220/20/11/0.09/0.859; media_processing 220/20/11/0.09/0.877; model_registry 220/20/11/0.09/0.841; shared_dotfiles 219/20/11/0.09/0.795; slack_clone 220/20/11/0.09/0.859; tiktok 220/20/11/0.09/0.855; user_tracking 220/20/11/0.09/0.845; web_scraping 220/20/11/0.09/0.877
+  within-vendor anthropic (3-way, chance 0.33): acc 0.958, macro balanced 0.958; template mix {np.str_('b6a3c5340e67'): 551, np.str_('043cbe728ba7'): 49}
+  within-vendor google (2-way, chance 0.50): acc 0.970, macro balanced 0.970; template mix {np.str_('043cbe728ba7'): 391, np.str_('0cf170d23301'): 6, np.str_('da39a3ee5e6b'): 3}
+  within-vendor openai (3-way, chance 0.33): acc 0.978, macro balanced 0.978; template mix {np.str_('b6a3c5340e67'): 563, np.str_('043cbe728ba7'): 37}
+
+## J4_skeleton: acc 0.768; macro balanced acc 0.767 [0.750,0.784]; errors 511 of which within-vendor 120 (23%)
+  per model (n / predicted / recall / precision / one-vs-rest balanced acc): Opus 200/206/0.65/0.63/0.806; Sonnet 200/209/0.77/0.74/0.871; Haiku 200/215/0.78/0.73/0.875; Gemini Pro 200/216/0.94/0.87/0.960; Gemini Flash 200/197/0.79/0.80/0.885; GLM 5 200/177/0.50/0.56/0.731; Kimi 198/163/0.39/0.47/0.673; Grok 200/205/0.88/0.86/0.933; GPT-5 Nano 200/197/0.92/0.93/0.957; GPT-5 Mini 200/203/0.85/0.84/0.919; GPT-5.4 200/210/0.97/0.92/0.981
+  leave-one-environment-out pooled acc 0.726, pooled macro balanced 0.725
+  per env (n trajectories / tasks / models / majority baseline / acc): auto_workflow 220/20/11/0.09/0.745; clinical_trial 219/20/11/0.09/0.767; file_indexing 220/20/11/0.09/0.755; media_processing 220/20/11/0.09/0.682; model_registry 220/20/11/0.09/0.755; shared_dotfiles 219/20/11/0.09/0.598; slack_clone 220/20/11/0.09/0.764; tiktok 220/20/11/0.09/0.755; user_tracking 220/20/11/0.09/0.655; web_scraping 220/20/11/0.09/0.782
+  within-vendor anthropic (3-way, chance 0.33): acc 0.853, macro balanced 0.853; template mix {np.str_('b6a3c5340e67'): 551, np.str_('043cbe728ba7'): 49}
+  within-vendor google (2-way, chance 0.50): acc 0.920, macro balanced 0.920; template mix {np.str_('043cbe728ba7'): 391, np.str_('0cf170d23301'): 6, np.str_('da39a3ee5e6b'): 3}
+  within-vendor openai (3-way, chance 0.33): acc 0.952, macro balanced 0.952; template mix {np.str_('b6a3c5340e67'): 563, np.str_('043cbe728ba7'): 37}
+
+## H2_formatting_only: acc 0.819; macro balanced acc 0.819 [0.804,0.835]; errors 397 of which within-vendor 168 (42%)
+  per model (n / predicted / recall / precision / one-vs-rest balanced acc): Opus 200/188/0.56/0.60/0.761; Sonnet 200/223/0.73/0.66/0.848; Haiku 200/221/0.84/0.76/0.907; Gemini Pro 200/202/0.90/0.89/0.942; Gemini Flash 200/206/0.92/0.89/0.952; GLM 5 200/181/0.77/0.85/0.878; Kimi 198/168/0.51/0.60/0.738; Grok 200/208/0.96/0.93/0.979; GPT-5 Nano 200/201/0.93/0.93/0.961; GPT-5 Mini 200/198/0.93/0.93/0.959; GPT-5.4 200/202/0.96/0.96/0.980
+  leave-one-environment-out pooled acc 0.789, pooled macro balanced 0.789
+  per env (n trajectories / tasks / models / majority baseline / acc): auto_workflow 220/20/11/0.09/0.832; clinical_trial 219/20/11/0.09/0.799; file_indexing 220/20/11/0.09/0.859; media_processing 220/20/11/0.09/0.682; model_registry 220/20/11/0.09/0.773; shared_dotfiles 219/20/11/0.09/0.753; slack_clone 220/20/11/0.09/0.809; tiktok 220/20/11/0.09/0.845; user_tracking 220/20/11/0.09/0.723; web_scraping 220/20/11/0.09/0.814
+  within-vendor anthropic (3-way, chance 0.33): acc 0.797, macro balanced 0.797; template mix {np.str_('b6a3c5340e67'): 551, np.str_('043cbe728ba7'): 49}
+  within-vendor google (2-way, chance 0.50): acc 0.912, macro balanced 0.913; template mix {np.str_('043cbe728ba7'): 391, np.str_('0cf170d23301'): 6, np.str_('da39a3ee5e6b'): 3}
+  within-vendor openai (3-way, chance 0.33): acc 0.950, macro balanced 0.950; template mix {np.str_('b6a3c5340e67'): 563, np.str_('043cbe728ba7'): 37}
+
+## H3_norm_verbs: acc 0.791; macro balanced acc 0.791 [0.776,0.806]; errors 459 of which within-vendor 110 (24%)
+  per model (n / predicted / recall / precision / one-vs-rest balanced acc): Opus 200/222/0.80/0.72/0.884; Sonnet 200/185/0.72/0.78/0.852; Haiku 200/212/0.82/0.78/0.901; Gemini Pro 200/218/0.92/0.84/0.949; Gemini Flash 200/194/0.78/0.80/0.878; GLM 5 200/190/0.56/0.59/0.760; Kimi 198/163/0.43/0.52/0.695; Grok 200/204/0.89/0.87/0.936; GPT-5 Nano 200/205/0.94/0.92/0.966; GPT-5 Mini 200/201/0.88/0.87/0.931; GPT-5.4 200/204/0.97/0.95/0.982
+  leave-one-environment-out pooled acc 0.740, pooled macro balanced 0.740
+  per env (n trajectories / tasks / models / majority baseline / acc): auto_workflow 220/20/11/0.09/0.750; clinical_trial 219/20/11/0.09/0.758; file_indexing 220/20/11/0.09/0.759; media_processing 220/20/11/0.09/0.718; model_registry 220/20/11/0.09/0.768; shared_dotfiles 219/20/11/0.09/0.644; slack_clone 220/20/11/0.09/0.782; tiktok 220/20/11/0.09/0.773; user_tracking 220/20/11/0.09/0.695; web_scraping 220/20/11/0.09/0.755
+  within-vendor anthropic (3-way, chance 0.33): acc 0.862, macro balanced 0.862; template mix {np.str_('b6a3c5340e67'): 551, np.str_('043cbe728ba7'): 49}
+  within-vendor google (2-way, chance 0.50): acc 0.925, macro balanced 0.925; template mix {np.str_('043cbe728ba7'): 391, np.str_('0cf170d23301'): 6, np.str_('da39a3ee5e6b'): 3}
+  within-vendor openai (3-way, chance 0.33): acc 0.950, macro balanced 0.950; template mix {np.str_('b6a3c5340e67'): 563, np.str_('043cbe728ba7'): 37}

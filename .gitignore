@@ -1,0 +1,16 @@
+# Extracted data: regenerated from public shards by `make data` (not redistributed)
+data/text/
+data/struct/
+data/raw/
+data/smoke/
+data/.complete
+*.tmp
+
+# Python / test caches
+__pycache__/
+.pytest_cache/
+
+# Private drafts, not part of the public study
+report/lesswrong_post.md
+report/bluedot_rapid_grant_draft.md
+REVIEW_PROMPT.md

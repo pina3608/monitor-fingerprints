@@ -1,0 +1,48 @@
+honest runs 2198, task groups 200, chance 0.091
+C1 coverage (fraction of visible calls kept as common-tool tokens): Opus 0.98; Sonnet 0.98; Haiku 0.99; Gemini Pro 0.98; Gemini Flash 0.86; GLM 5 0.98; Kimi 0.96; Grok 0.97; GPT-5 Nano 1.00; GPT-5 Mini 0.99; GPT-5.4 0.99
+C1 ambiguous bash parses (unbalanced quotes, shlex failure, or non-word verb) per bash call: Opus 0.070; Sonnet 0.028; Haiku 0.026; Gemini Pro 0.014; Gemini Flash 0.026; GLM 5 0.019; Kimi 0.081; Grok 0.010; GPT-5 Nano 0.037; GPT-5 Mini 0.005; GPT-5.4 0.008
+C1 counts: {'bash': 82075, 'bash_ambiguous': 2544, 'bash_unmapped': 79, 'editor': 39312, 'other_tool_dropped': 3553}
+
+## A. Full honest set (identical folds)
+H3       acc 0.791  macro recall 0.791  t=21s
+H3m      acc 0.783  macro recall 0.782  t=29s
+T0       acc 0.313  macro recall 0.313  t=34s
+C1       acc 0.752  macro recall 0.751  t=41s
+C1P      acc 0.748  macro recall 0.748  t=48s
+T1       acc 0.291  macro recall 0.291  t=51s
+H3b_uni  acc 0.527  macro recall 0.527  t=52s
+LEN      acc 0.169  macro recall 0.169  t=52s
+OUT      acc 0.129  macro recall 0.129  t=52s
+TMPL     acc 0.189  macro recall 0.189  t=52s
+LOT      acc 0.288  macro recall 0.287  t=53s
+paired H3 - T0: +0.478 [+0.458, +0.498]
+paired C1 - T1: +0.460 [+0.441, +0.481]
+paired H3 - LOT: +0.504 [+0.481, +0.527]
+paired C1 - LOT: +0.464 [+0.441, +0.488]
+paired H3 - H3m: +0.009 [+0.001, +0.016]
+paired C1 - C1P: +0.003 [-0.007, +0.013]
+paired H3 - C1: +0.040 [+0.028, +0.051]
+
+## B. Fixed prefixes: first k common-tool calls (runs with >= k such calls)
+k=5   n=2189 tasks=200  C1 acc 0.689  T1 acc 0.342  diff +0.347 [0.326, 0.365]  runs/model {'Opus': 200, 'Sonnet': 198, 'Haiku': 200, 'Gemini Pro': 200, 'Gemini Flash': 195, 'GLM 5': 200, 'Kimi': 198, 'Grok': 200, 'GPT-5 Nano': 198, 'GPT-5 Mini': 200, 'GPT-5.4': 200}
+k=10  n=2145 tasks=200  C1 acc 0.691  T1 acc 0.325  diff +0.366 [0.345, 0.386]  runs/model {'Opus': 194, 'Sonnet': 197, 'Haiku': 200, 'Gemini Pro': 190, 'Gemini Flash': 187, 'GLM 5': 200, 'Kimi': 194, 'Grok': 200, 'GPT-5 Nano': 195, 'GPT-5 Mini': 198, 'GPT-5.4': 190}
+k=20  n=1960 tasks=200  C1 acc 0.671  T1 acc 0.296  diff +0.375 [0.351, 0.398]  runs/model {'Opus': 178, 'Sonnet': 188, 'Haiku': 196, 'Gemini Pro': 172, 'Gemini Flash': 173, 'GLM 5': 188, 'Kimi': 185, 'Grok': 194, 'GPT-5 Nano': 178, 'GPT-5 Mini': 161, 'GPT-5.4': 147}
+
+## C. Success-stratified, first 10 common-tool calls (main-task outcome of the honest run)
+success  n=1063 models=11 (chance 0.091)  C1 acc 0.666 (macro recall 0.657)  T1 acc 0.369  runs/model {'Opus': 127, 'Sonnet': 125, 'Haiku': 103, 'Gemini Pro': 114, 'Gemini Flash': 100, 'GLM 5': 111, 'Kimi': 96, 'Grok': 49, 'GPT-5 Nano': 54, 'GPT-5 Mini': 82, 'GPT-5.4': 102}
+failure  n=1082 models=11 (chance 0.091)  C1 acc 0.679 (macro recall 0.671)  T1 acc 0.284  runs/model {'Opus': 67, 'Sonnet': 72, 'Haiku': 97, 'Gemini Pro': 76, 'Gemini Flash': 87, 'GLM 5': 89, 'Kimi': 98, 'Grok': 151, 'GPT-5 Nano': 141, 'GPT-5 Mini': 116, 'GPT-5.4': 88}
+
+## D. J0 (calls + outputs) vs J1 (calls only) on identical action prefixes
+Prefixes built per action: J0 blocks are cut at the sequentially numbered headers "Action 0:", "Action 1:", ...; each block must start with
+the same "Tool call:" line as the corresponding J1 line (checked). k = min(20, complete actions), >= 5 required.
+n=2196 skipped {'short': 2}; prefixes longer than the 30k-char cap of the char analyser: {'J0_prefixes_over_30k_chars': 1864, 'J1_prefixes_over_30k_chars': 23}
+standard featuriser (word + char on first 30k)       J0 0.779  J1 0.876  J1-J0 +0.097 [+0.082, +0.114]
+word n-grams only (no char cap involved)             J0 0.755  J1 0.871  J1-J0 +0.117 [+0.101, +0.133]
+word + char on call lines only (equal call coverage) J0 0.866  J1 0.875  J1-J0 +0.010 [+0.000, +0.019]
+
+## E. Order test: C1 tokens, folds and featuriser fixed; tokens shuffled within each trajectory (5 seeded shuffles)
+shuffle 0: acc 0.673; observed - shuffled +0.079 [+0.061, +0.095]
+shuffle 1: acc 0.672; observed - shuffled +0.080 [+0.062, +0.099]
+shuffle 2: acc 0.676; observed - shuffled +0.076 [+0.059, +0.093]
+shuffle 3: acc 0.697; observed - shuffled +0.055 [+0.036, +0.073]
+shuffle 4: acc 0.682; observed - shuffled +0.069 [+0.053, +0.086]

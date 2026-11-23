@@ -1,0 +1,252 @@
+{
+ "J0_raw": {
+  "as_run_8": {
+   "pooled": 0.7628004774990477,
+   "foldwise": 0.7621713229252259,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "all_11": {
+   "pooled": 0.7300177667804364,
+   "foldwise": 0.7303727236522936,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "successful_attacks_all_11": {
+   "pooled": 0.8028685751615686,
+   "foldwise": 0.8041890668857683,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.177,
+    0.199,
+    0.219,
+    0.2,
+    0.2
+   ]
+  },
+  "matched_13_tasks_all_11": {
+   "pooled": 0.5933569330421029,
+   "foldwise": 0.6399621212121213,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.667,
+    0.579,
+    0.6,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "J1_calls": {
+  "as_run_8": {
+   "pooled": 0.9232481498612396,
+   "foldwise": 0.928067652697891,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "all_11": {
+   "pooled": 0.8930252798987222,
+   "foldwise": 0.8954124579124579,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "successful_attacks_all_11": {
+   "pooled": 0.9386955174034337,
+   "foldwise": 0.938452747876063,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.177,
+    0.199,
+    0.219,
+    0.2,
+    0.2
+   ]
+  },
+  "matched_13_tasks_all_11": {
+   "pooled": 0.7667771333885667,
+   "foldwise": 0.8285984848484849,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.667,
+    0.579,
+    0.6,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "J2_nocomments": {
+  "as_run_8": {
+   "pooled": 0.9151656962507482,
+   "foldwise": 0.9195083538756506,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "all_11": {
+   "pooled": 0.884938517588753,
+   "foldwise": 0.8876805691321821,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "successful_attacks_all_11": {
+   "pooled": 0.9316653167881558,
+   "foldwise": 0.9320340163575471,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.177,
+    0.199,
+    0.219,
+    0.2,
+    0.2
+   ]
+  },
+  "matched_13_tasks_all_11": {
+   "pooled": 0.7726519545077953,
+   "foldwise": 0.83125,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.667,
+    0.579,
+    0.6,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "J3_maskliterals": {
+  "as_run_8": {
+   "pooled": 0.7324534404418567,
+   "foldwise": 0.738646090112298,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "all_11": {
+   "pooled": 0.7412777785770032,
+   "foldwise": 0.74632865392274,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "successful_attacks_all_11": {
+   "pooled": 0.7725683855119706,
+   "foldwise": 0.7735614158745783,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.177,
+    0.199,
+    0.219,
+    0.2,
+    0.2
+   ]
+  },
+  "matched_13_tasks_all_11": {
+   "pooled": 0.682006477366875,
+   "foldwise": 0.6888257575757576,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.667,
+    0.579,
+    0.6,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "J4_skeleton": {
+  "as_run_8": {
+   "pooled": 0.8845635849159277,
+   "foldwise": 0.8862041221583128,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "all_11": {
+   "pooled": 0.8520281643031574,
+   "foldwise": 0.8541146229318273,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.34,
+    0.345,
+    0.34,
+    0.31,
+    0.241
+   ]
+  },
+  "successful_attacks_all_11": {
+   "pooled": 0.8939695427411534,
+   "foldwise": 0.8953901078964162,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.177,
+    0.199,
+    0.219,
+    0.2,
+    0.2
+   ]
+  },
+  "matched_13_tasks_all_11": {
+   "pooled": 0.7700911350455675,
+   "foldwise": 0.7727272727272727,
+   "folds_skipped": 0,
+   "test_fold_attack_share": [
+    0.667,
+    0.579,
+    0.6,
+    0.5,
+    0.5
+   ]
+  }
+ }
+}

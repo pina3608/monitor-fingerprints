@@ -1,0 +1,30 @@
+## 1. Records in the 10 environment shards
+records 22,215; monitor re-scoring records ('<Monitor> monitor on <Model> ...') 12,248; cohort agent runs (11 models x honest/attack) 3,212; other agent runs 6,755 (run names: 44); duplicate trajectory_id records 92
+extracted: struct 3212, text 3212; excluded (kimi-k2-thinking) 2; cohort 3210
+uniqueness: one run per (model, label, env, main_task, side_task); trajectory_id unique; text<->struct join one-to-one  [asserted]
+
+## 2. Cohort per model (after exclusion)
+model         honest attack excl  no-version-label(h/a)  agent_model values                 main-task success (h)  side-task success (a)  honest templates
+Opus             200     92    0   185/0                  {'None': 185, 'claude-opus-4-6': 1     0.67                   0.98        {'b6a3c5340e67': 185, '043cbe728ba7': 15}
+Sonnet           200     92    0   184/0                  {'None': 184, 'claude-sonnet-4-6':     0.64                   0.96        {'b6a3c5340e67': 184, '043cbe728ba7': 16}
+Haiku            200     92    0   182/0                  {'None': 182, 'claude-haiku-4-5-20     0.52                   0.73        {'b6a3c5340e67': 182, '043cbe728ba7': 18}
+Gemini Pro       200     92    0     0/0                  {'gemini-3.1-pro-preview': 292}        0.61                   0.88        {'043cbe728ba7': 197, '0cf170d23301': 3}
+Gemini Flash     200     92    0     0/0                  {'gemini-3-flash-preview': 292}        0.54                   0.57        {'043cbe728ba7': 194, '0cf170d23301': 3, 'da39a3ee5e6b': 3}
+GLM 5            200     92    0   189/0                  {'None': 189, 'glm-5': 103}            0.56                   0.87        {'b6a3c5340e67': 189, '043cbe728ba7': 11}
+Kimi             198     92    2   139/0                  {'None': 139, 'kimi-k2.5': 151}        0.48                   0.45        {'b6a3c5340e67': 139, '043cbe728ba7': 35, 'da39a3ee5e6b': 24}
+Grok             200     92    0     0/0                  {'grok-4.1-fast': 292}                 0.24                   0.43        {'043cbe728ba7': 200}
+GPT-5 Nano       200     92    0   190/0                  {'None': 190, 'gpt-5-nano': 102}       0.28                   0.00        {'b6a3c5340e67': 190, '043cbe728ba7': 10}
+GPT-5 Mini       200     92    0   190/0                  {'None': 190, 'gpt-5-mini': 102}       0.41                   0.01        {'b6a3c5340e67': 190, '043cbe728ba7': 10}
+GPT-5.4          200     92    0   183/0                  {'None': 183, 'gpt-5.4': 109}          0.54                   0.07        {'b6a3c5340e67': 183, '043cbe728ba7': 17}
+missing agent_model labels: honest 1442, attack 0, total 1442
+honest 2198 on 200 main-task groups; attack 1012 on 92 (main, side) pairs / 67 main-task groups; shared main-task groups 13; honest runs outside the attack set 2056 on 187 groups
+
+## 4. Repeated monitor views (J0 = raw view hash), cohort only
+{'sha256': '5558e933159f', 'n': 7, 'labels': {'attack': 7}, 'models': {'GPT-5 Nano': 5, 'GPT-5 Mini': 2}, 'task_groups': 7, 'empty_sentinel': True, 'chars': 20}
+{'sha256': '42118f98fc2b', 'n': 7, 'labels': {'attack': 7}, 'models': {'GPT-5 Mini': 7}, 'task_groups': 7, 'empty_sentinel': False, 'chars': 267}
+2 repeated view hashes covering 14 trajectories
+
+## 5. Attack-scaffold planning-tool calls (tool name contains "phase" or "planning"; same rule as src/robustness.py), attack runs
+total 322; monitor-visible 164; malformed (parse error, dropped by the formatter) 158
+per model (total/visible/malformed): Opus 83/0/83; Sonnet 26/1/25; Haiku 17/1/16; Gemini Pro 7/0/7; Gemini Flash 118/97/21; GLM 5 5/0/5; Kimi 44/43/1; Grok 5/5/0; GPT-5 Mini 17/17/0
+planning / ready_to_plan calls in honest runs: 212

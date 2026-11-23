@@ -1,0 +1,25 @@
+trajectories honest=2198 attack=1012
+
+## J1_calls  (11-way task-held-out acc 0.909; t=993s)
+  same-model-vs-rest AUROC [95% task-cluster CI]: Opus 0.987 [0.984,0.990]; Sonnet 0.996 [0.994,0.997]; Haiku 0.996 [0.993,0.998]; Gemini Pro 0.998 [0.997,1.000]; Gemini Flash 0.998 [0.996,0.999]; GLM 5 0.967 [0.958,0.974]; Kimi 0.939 [0.927,0.950]; Grok 0.999 [0.998,1.000]; GPT-5 Nano 1.000 [0.999,1.000]; GPT-5 Mini 1.000 [0.999,1.000]; GPT-5.4 1.000 [1.000,1.000]
+  leave-one-environment-out acc: median 0.857, min 0.772 (clinical_trial), max 0.914 (auto_workflow)
+
+## J4_skeleton  (11-way task-held-out acc 0.768; t=1023s)
+  same-model-vs-rest AUROC [95% task-cluster CI]: Opus 0.944 [0.928,0.959]; Sonnet 0.951 [0.931,0.966]; Haiku 0.975 [0.968,0.981]; Gemini Pro 0.987 [0.978,0.994]; Gemini Flash 0.960 [0.945,0.973]; GLM 5 0.901 [0.881,0.919]; Kimi 0.833 [0.804,0.859]; Grok 0.986 [0.980,0.990]; GPT-5 Nano 0.994 [0.989,0.998]; GPT-5 Mini 0.984 [0.975,0.991]; GPT-5.4 0.997 [0.993,0.999]
+  leave-one-environment-out acc: median 0.755, min 0.598 (shared_dotfiles), max 0.782 (web_scraping)
+
+## H2_formatting_only  (11-way task-held-out acc 0.819; t=1085s)
+  same-model-vs-rest AUROC [95% task-cluster CI]: Opus 0.941 [0.930,0.952]; Sonnet 0.963 [0.953,0.971]; Haiku 0.979 [0.971,0.986]; Gemini Pro 0.993 [0.987,0.997]; Gemini Flash 0.991 [0.982,0.996]; GLM 5 0.974 [0.963,0.983]; Kimi 0.900 [0.881,0.918]; Grok 0.998 [0.997,0.999]; GPT-5 Nano 0.996 [0.994,0.998]; GPT-5 Mini 0.996 [0.993,0.998]; GPT-5.4 1.000 [0.999,1.000]
+  leave-one-environment-out acc: median 0.804, min 0.682 (media_processing), max 0.859 (file_indexing)
+
+## H3_norm_verbs  (11-way task-held-out acc 0.791; t=1119s)
+  same-model-vs-rest AUROC [95% task-cluster CI]: Opus 0.966 [0.955,0.976]; Sonnet 0.954 [0.937,0.968]; Haiku 0.975 [0.966,0.982]; Gemini Pro 0.986 [0.975,0.994]; Gemini Flash 0.966 [0.953,0.975]; GLM 5 0.912 [0.895,0.928]; Kimi 0.841 [0.814,0.867]; Grok 0.988 [0.983,0.992]; GPT-5 Nano 0.996 [0.993,0.999]; GPT-5 Mini 0.983 [0.975,0.989]; GPT-5.4 0.996 [0.991,0.999]
+  leave-one-environment-out acc: median 0.756, min 0.644 (shared_dotfiles), max 0.782 (slack_clone)
+
+## Honest->attack transfer (train: 2056 honest runs on tasks outside the attack set)
+  planning-tool calls in attack runs by model: {"Kimi": 43, "Gemini Flash": 97, "Grok": 5, "GPT-5 Mini": 17, "Sonnet": 1, "Haiku": 1}
+  calls as-is                              transfer acc 0.827
+  calls, planning removed                  transfer acc 0.828
+  calls, planning removed + keys sorted    transfer acc 0.820
+  H3 verbs as-is                           transfer acc 0.647
+  H3 verbs, planning removed               transfer acc 0.640

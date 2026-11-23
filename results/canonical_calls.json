@@ -1,0 +1,102 @@
+{
+ "accounting": {
+  "visible_calls": {
+   "honest": 122934,
+   "attack": 43373
+  },
+  "planning_calls_dropped_by_name": {
+   "start_phase1_planning": 25,
+   "start_phase2_planning": 126,
+   "start_phase3_planning": 1,
+   "start_phase2_execution": 3,
+   "start_phase2_final_selection": 3,
+   "start_phase2_implementation_checklist": 2,
+   "planning_phase": 2,
+   "start_phase3_execution": 2
+  },
+  "canonicalisation_failures": {
+   "honest": 74,
+   "attack": 5
+  },
+  "visible_call_args_over_4000_chars": {
+   "honest": 2859,
+   "attack": 638
+  },
+  "struct_non_planning_actions": {
+   "honest": 124940,
+   "attack": 43257
+  },
+  "struct_reprs_at_4000_char_cap": {
+   "honest": 3891,
+   "attack": 1027
+  }
+ },
+ "views": {
+  "J1": {
+   "acc_11way": 0.9094631483166515,
+   "acc_transfer": 0.8191699604743083,
+   "transfer_recall_per_model": {
+    "Opus": 0.9239130434782609,
+    "Sonnet": 0.8804347826086957,
+    "Haiku": 0.40217391304347827,
+    "Gemini Pro": 0.967391304347826,
+    "Gemini Flash": 0.967391304347826,
+    "GLM 5": 0.8804347826086957,
+    "Kimi": 0.30434782608695654,
+    "Grok": 1.0,
+    "GPT-5 Nano": 0.8804347826086957,
+    "GPT-5 Mini": 0.8152173913043478,
+    "GPT-5.4": 0.9891304347826086
+   }
+  },
+  "J1S_planning_dropped": {
+   "acc_11way": 0.9094631483166515,
+   "acc_transfer": 0.817193675889328,
+   "transfer_recall_per_model": {
+    "Opus": 0.9239130434782609,
+    "Sonnet": 0.8804347826086957,
+    "Haiku": 0.40217391304347827,
+    "Gemini Pro": 0.967391304347826,
+    "Gemini Flash": 0.9565217391304348,
+    "GLM 5": 0.8804347826086957,
+    "Kimi": 0.29347826086956524,
+    "Grok": 1.0,
+    "GPT-5 Nano": 0.8804347826086957,
+    "GPT-5 Mini": 0.8152173913043478,
+    "GPT-5.4": 0.9891304347826086
+   }
+  },
+  "J1C_recursive_canonical": {
+   "acc_11way": 0.9030937215650592,
+   "acc_transfer": 0.8043478260869565,
+   "transfer_recall_per_model": {
+    "Opus": 0.9021739130434783,
+    "Sonnet": 0.8478260869565217,
+    "Haiku": 0.42391304347826086,
+    "Gemini Pro": 0.967391304347826,
+    "Gemini Flash": 0.8913043478260869,
+    "GLM 5": 0.8695652173913043,
+    "Kimi": 0.2717391304347826,
+    "Grok": 0.9891304347826086,
+    "GPT-5 Nano": 0.8804347826086957,
+    "GPT-5 Mini": 0.8152173913043478,
+    "GPT-5.4": 0.9891304347826086
+   }
+  }
+ },
+ "paired_J1S_planning_dropped_minus_J1": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "paired_J1C_recursive_canonical_minus_J1": [
+  -0.006369426751592357,
+  -0.012305886736214603,
+  -0.0004551609585906499
+ ],
+ "paired_J1C_recursive_canonical_minus_J1S_planning_dropped": [
+  -0.006369426751592357,
+  -0.012284034229818724,
+  -0.0009094939848691553
+ ]
+}
